@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7081</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+
+        .text-16 {
+            color: white;
+            font-size: .875rem;
+        }
+
+        body {
+            background-image: url(../dccl--responsive-contact-page/bg-image.svg);
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-size: 100%;
+            padding: 10px 50px;
+        }
+
+        main {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .main-heading {
+            text-align: center;
+        }
+
+        .container {
+            background-color: #cdd5e04c;
+            width: 60vw;
+            border-radius: 25px;
+            padding: 5%;
+        }
+
+        h1,
+        p {
+            color: white;
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        input,
+        select,
+        button {
+            border: 0px solid white;
+            border-radius: 15px;
+            height: 8vh;
+            width: 29vw;
+            margin-bottom: 15px;
+        }
+
+        .name-email,
+        .selection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ::placeholder,
+        select,
+        .text-36 {
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        input[type=message] {
+            width: 99%;
+            height: 20vh;
+        }
+
+        .text-36 {
+            color: #4036A9;
+            font-size: 1.25rem;
+        }
+
+        button {
+            width: 99%;
+            margin-bottom: -5px;
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 641px) {
+            body {
+                background-size: 150%;
+            }
+
+            .container {
+                width: 85vw;
+            }
+
+            input,
+            select {
+                width: 41vw;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            body {
+                background-size: 210%;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: .875rem;
+            }
+
+            .container {
+                width: 85vw;
+            }
+
+            input,
+            select {
+                width: 85vw;
+            }
+
+            input,
+            select,
+            button {
+                
+            }
+
+            .name-email,
+            .selection {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./contact-form-icon.svg" alt="">
+    <main>
+        <div class="main-heading">
+            <h1>Interested in our <br> business pricing?</h1>
+            <p>Fill out the form to view details and we’ll <br>
+                contact you as soon as possible.</p>
+        </div>
+
+        <div class="container">
+            <div class="name-email">
+                <div>
+                    <span class="text-16">Name</span> <br>
+                    <input type="name" placeholder="Ethan Johnson">
+                </div>
+                <div>
+                    <span class="text-16">Company Email</span> <br>
+                    <input type="email" name="" id="" placeholder="ethan@johnson.com">
+                </div>
+            </div>
+            <div class="selection">
+                <div>
+                    <span class="text-16">Name</span> <br>
+                    <select name="size" id="">
+                        <option value="1">50-100 employee</option>
+                    </select>
+                </div>
+                <div>
+                    <span class="text-16">Company Email</span> <br>
+                    <select name="" id="">
+                        <option value="1">Building landing pages</option>
+                    </select>
+                </div>
+            </div>
+            <div class="msg" style="margin-bottom: 15px;">
+                <span class="text-16">Message</span> <br>
+                <input type="message">
+            </div>
+            <button><span class="text-36">Contact Sales</span></button>
+        </div>
+    </main>
+</body>
+
+</html>
